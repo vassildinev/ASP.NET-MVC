@@ -120,6 +120,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Coolness\Controllers\PeshoController.cs" />
+    <Compile Include="Areas\Coolness\CoolnessAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProjectsController.cs" />
     <Compile Include="Controllers\StatisticsController.cs" />
@@ -141,6 +143,10 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\Coolness\Views\web.config" />
+    <Content Include="Areas\Coolness\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Coolness\Views\Pesho\Index.cshtml" />
+    <Content Include="Areas\Coolness\Views\Pesho\GoshoPartial.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -171,7 +177,10 @@
     <Content Include="Views\Projects\Details.cshtml" />
     <Content Include="Views\Statistics\All.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Areas\Coolness\Models\" />
+    <Folder Include="Areas\Coolness\Views\Shared\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
