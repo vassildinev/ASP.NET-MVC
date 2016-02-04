@@ -1,0 +1,9 @@
+﻿@model IEnumerable<SimpleMvcApp.ViewModels.ProjectViewModel>
+
+<h1 class="text-center">All Projects</h1>
+@foreach (var project in @Model)
+{
+    <div>
+        @Html.ActionLink(@project.Title, "Details", new { id = @project.Id })
+    </div>
+}
