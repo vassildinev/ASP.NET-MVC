@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviesSystem.Data.Models", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviesSystem.Data", "Data\MoviesSystem.Data\MoviesSystem.Data.csproj", "{E52FAE60-8291-4E01-9324-10FE6F6652C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviesSystem.Web.App", "MoviesSystem.Web.App\MoviesSystem.Web.App.csproj", "{CB3A10F7-5898-42DF-BDC5-8D3AD55D82A3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoviesSystem.Web.App", "Web\MoviesSystem.Web.App\MoviesSystem.Web.App.csproj", "{CB3A10F7-5898-42DF-BDC5-8D3AD55D82A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -186,11 +186,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Data\MoviesSystem.Data.Models\MoviesSystem.Data.Models.csproj">
+    <ProjectReference Include="..\..\Data\MoviesSystem.Data.Models\MoviesSystem.Data.Models.csproj">
       <Project>{5c68260c-c0f3-463f-a1c7-1ed2921c756b}</Project>
       <Name>MoviesSystem.Data.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Data\MoviesSystem.Data\MoviesSystem.Data.csproj">
+    <ProjectReference Include="..\..\Data\MoviesSystem.Data\MoviesSystem.Data.csproj">
       <Project>{e52fae60-8291-4e01-9324-10fe6f6652c9}</Project>
       <Name>MoviesSystem.Data</Name>
     </ProjectReference>
