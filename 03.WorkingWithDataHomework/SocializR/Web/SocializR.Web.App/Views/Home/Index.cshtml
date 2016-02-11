@@ -1,0 +1,18 @@
+﻿@model IEnumerable<SocializR.Data.Models.Shout>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div>
+    @foreach (var item in @Model)
+    {
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                By @item.Author.ToString()
+            </div>
+            <div class="panel-body">
+                @item.Content
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{45881E27-25B8-4A3E-93E1-B5DEF6326101}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{14E833E5-1188-499D-B8E4-192055395D3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocializR.Data.Models", "Data\SocializR.Data.Models\SocializR.Data.Models.csproj", "{E925F785-006E-4705-A9F9-DC89044CFA5A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocializR.Data", "Data\SocializR.Data\SocializR.Data.csproj", "{AC0F3EE0-C42A-4434-9AF8-27159ACADA76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocializR.Web.App", "Web\SocializR.Web.App\SocializR.Web.App.csproj", "{5387CFF3-C6E2-44FF-B522-45DF8E4BB538}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E925F785-006E-4705-A9F9-DC89044CFA5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E925F785-006E-4705-A9F9-DC89044CFA5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E925F785-006E-4705-A9F9-DC89044CFA5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E925F785-006E-4705-A9F9-DC89044CFA5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC0F3EE0-C42A-4434-9AF8-27159ACADA76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC0F3EE0-C42A-4434-9AF8-27159ACADA76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC0F3EE0-C42A-4434-9AF8-27159ACADA76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC0F3EE0-C42A-4434-9AF8-27159ACADA76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5387CFF3-C6E2-44FF-B522-45DF8E4BB538}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5387CFF3-C6E2-44FF-B522-45DF8E4BB538}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5387CFF3-C6E2-44FF-B522-45DF8E4BB538}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5387CFF3-C6E2-44FF-B522-45DF8E4BB538}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E925F785-006E-4705-A9F9-DC89044CFA5A} = {45881E27-25B8-4A3E-93E1-B5DEF6326101}
+		{AC0F3EE0-C42A-4434-9AF8-27159ACADA76} = {45881E27-25B8-4A3E-93E1-B5DEF6326101}
+		{5387CFF3-C6E2-44FF-B522-45DF8E4BB538} = {14E833E5-1188-499D-B8E4-192055395D3B}
+	EndGlobalSection
+EndGlobal
