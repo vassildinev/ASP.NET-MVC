@@ -1,0 +1,35 @@
+﻿@model ICollection<UserVoiceSystem.Web.ViewModels.Home.IdeaHomeViewModel>
+@{
+    ViewBag.PageTitle = "Home Page";
+    int page = 1;
+    if (this.Context.Request.QueryString["page"] != null)
+    {
+        page = int.Parse(this.Context.Request.QueryString["page"]);
+    }
+}
+
+<div class="text-center">
+    <h1>User Voice System</h1>
+    @using (Html.BeginForm("Create", "Ideas", FormMethod.Post))
+    {
+        <h2>I suggest you...</h2>
+        @Html.TextBox("Title", null, new { placeholder = "Title" })
+        <br />
+        @Html.TextArea("Description", null, new { placeholder = "Description" })
+        <br />
+        <input type="submit" title="Post idea" />
+    }
+
+    <br />
+    <div>
+        @Html.DisplayForModel()
+    </div>
+    <div>
+        @if(page > 1)
+        {
+        <a class="btn btn-default" href=@("/?page="+(page - 1))>Previous</a>
+        }
+
+        <a class="btn btn-default" href=@("/?page="+(page + 1))>Next</a>
+    </div>
+</div>

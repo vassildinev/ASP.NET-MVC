@@ -1,0 +1,12 @@
+﻿@model UserVoiceSystem.Web.ViewModels.Home.IdeaHomeViewModel
+<div class="row">
+    <div class="col-md-2">
+        <h3>@Model.Votes</h3>
+        <p>Votes</p>
+    </div>
+    <div class="col-md-10">
+        <h3><a href=@Model.Url>@Model.Title</a></h3>
+        <p>@Model.Description</p>
+    </div>
+</div>
+

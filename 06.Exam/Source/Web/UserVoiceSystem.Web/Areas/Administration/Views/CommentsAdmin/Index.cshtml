@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Comments</h2>
+@(Html.Kendo().Grid<UserVoiceSystem.Web.Areas.Administration.Models.CommentViewModel>()
+        .Name("grid")
+        .Columns(columns =>
+        {
+            columns.Bound(c => c.AuthorEmail).Width(120);
+            columns.Bound(c => c.Content).Width(120);
+            columns.Command(command => { command.Edit(); command.Destroy(); }).Width(250);
+        })
+        .ToolBar(toolbar => toolbar.Create())
+        .Editable(editable => editable.Mode(GridEditMode.InLine))
+        .Sortable()
+        .Filterable()
+        .Pageable(pageable => pageable
+            .Refresh(true)
+            .PageSizes(true)
+            .ButtonCount(5))
+        .DataSource(dataSource => dataSource
+            .Ajax()
+            .Model(model => model.Id(p => p.Id))
+            .Create(update => update.Action("Create", "CommentsAdmin"))
+            .Read(read => read.Action("Read", "CommentsAdmin"))
+            .Update(update => update.Action("Update", "CommentsAdmin"))
+            .Destroy(destroy => destroy.Action("Delete", "CommentsAdmin"))
+            .PageSize(10)
+        )
+)
+

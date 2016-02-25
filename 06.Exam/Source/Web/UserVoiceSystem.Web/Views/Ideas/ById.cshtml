@@ -1,0 +1,48 @@
+﻿@model UserVoiceSystem.Web.ViewModels.Ideas.IdeaDetailedViewModel
+
+@{
+    ViewBag.Title = "GetById";
+    int page = 1;
+    if (this.Context.Request.QueryString["page"] != null)
+    {
+        page = int.Parse(this.Context.Request.QueryString["page"]);
+    }
+}
+
+@if (this.User.Identity.IsAuthenticated)
+{
+    using (Html.BeginForm("Delete", "Ideas", new { id = Model.Id }, FormMethod.Post, null))
+    {
+        <input type="submit" value="Delete" />
+    }
+}
+
+<h1>@Model.Title</h1>
+<p>@Model.Description</p>
+<p><strong>@Model.Votes</strong> votes</p>
+<div>
+    @using (Html.BeginForm("Create", "Comments", new { Id = @Model.Id }, FormMethod.Post, null))
+    {
+        @Html.TextArea("NewContent", null, new { placeholder = "Comment content" })
+        <br />
+        @Html.TextBox("Email", this.User.Identity?.Name, new { type = "email", placeholder = "Email" })
+        <br />
+        <input type="submit" title="Post comment" />
+    }
+
+</div>
+<h2>@Model.Comments comments</h2>
+
+@Html.DisplayFor(x => x.CommentsDetailed)
+<div>
+    @if (page > 1)
+    {
+        <a class="btn btn-default" href=@("/Ideas/ById/"+ @Model.ObfuscatedId+"?page="+(page - 1))>Previous</a>
+    }
+
+    @if (Model.CommentsDetailed.Count == 4)
+    {
+        <a class="btn btn-default" href=@("/Ideas/ById/"+ @Model.ObfuscatedId+"?page="+(page + 1))>Next</a>
+    }
+</div>
+
